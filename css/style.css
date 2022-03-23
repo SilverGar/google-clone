@@ -39,7 +39,7 @@ header nav .nav-right-section{
 
 .nav-right-section li a{
     text-decoration: none;
-    color: black;
+    color: #5f6367;
 }
 
 nav .nav-right-section .apps-icon{
@@ -71,7 +71,7 @@ main .main-logo img{
 }
 
 main .main-input{
-    max-width: 550px;
+    max-width: 570px;
     margin: 0 auto;
     margin-bottom: 36px;
 }
@@ -82,7 +82,7 @@ main .main-input-container{
     border-radius: 100px;
     border: 1px solid #bbbec0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -91,11 +91,22 @@ main .main-input-container:hover{
 }
 
 main .main-input-container .search-icon{
-    
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
 }
 
 main .main-input-container .micro-icon{
     background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
 }
 
 main .main-input-container input{
@@ -103,4 +114,63 @@ main .main-input-container input{
     height: 100%;
     border: none;
     outline: none;
+}
+
+main .main-buttons{
+    width: 400px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+main .main-buttons div button{
+    height: 34px;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 1.4rem;
+    color: #5f6368;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+main .main-buttons div button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px 0 #5f6367;
+    
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #5f6368;
+    margin: 0 15px;
+}
+
+footer .footer-left{
+    justify-content: left;
+}
+
+footer .footer-right{
+    justify-content: end;
 }
