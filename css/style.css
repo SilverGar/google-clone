@@ -4,21 +4,103 @@
     padding: 0;
 }
 
-header ul{
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+}
+
+header nav{
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10px;
+}
+
+header nav .nav-right-section{
     display: flex;
     list-style: none;
-    justify-content: end; 
+    font-size: 1.5rem;
+    align-items: center;
 }
 
-header ul li{
-    margin: 5px 5px;
+.nav-right-section li{
+    margin: 5px 10px;
 }
 
-header ul li:hover{
+.nav-right-section li:hover{
     text-decoration: underline;
 }
 
-header ul li a{
+.nav-right-section li a{
     text-decoration: none;
     color: black;
+}
+
+nav .nav-right-section .apps-icon{
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+nav .nav-right-section img{
+    border-radius: 50%;
+}
+
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 520px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
+
+main .main-logo img{
+    width: 272px;
+}
+
+main .main-input{
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
+
+main .main-input-container{
+    width: 95%;
+    height: 45px;
+    border-radius: 100px;
+    border: 1px solid #bbbec0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 1px 8px 0 #5f6367;
+}
+
+main .main-input-container .search-icon{
+    
+}
+
+main .main-input-container .micro-icon{
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+}
+
+main .main-input-container input{
+    width: 430px;
+    height: 100%;
+    border: none;
+    outline: none;
 }
